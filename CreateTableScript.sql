@@ -1,0 +1,1 @@
+'account_tbl', 'CREATE TABLE `account_tbl` (\n  `id` int NOT NULL,\n  `active` bit(1) DEFAULT NULL,\n  `birthdate` datetime DEFAULT NULL,\n  `email` varchar(255) DEFAULT NULL,\n  `firstname` varchar(255) DEFAULT NULL,\n  `lastname` varchar(255) DEFAULT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci'
