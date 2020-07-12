@@ -5,6 +5,7 @@ Spring Boot Crud Example-Vuejs-Mysql
 For front-end:
 	I search about front-end techs after i read this article https://tekkiwebsolutions.com/blog/comparison-of-angular-vs-react-vs-vue. 
 	I decided Vue because my project is samll and vue learning curve is better React and Angular. Before I haven't coded vue , but always wondered. So this project my first vue project.
+	Vue project folder name is task-vue-side. I added without node modules you need to npm install for modules.
 	
 	
 For back-end:
@@ -14,8 +15,8 @@ For back-end:
 
 For Db Side:
 	Here I chose my-sql relational database that I did not use before because I was wondering because it was used a lot and I wanted to use it.
+	I added CreateTableScript.sql for create table.
 	
-
 
 Improvement Points
 -Form Input Validations
