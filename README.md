@@ -59,12 +59,18 @@ It was created for the purpose of a web project from database to user.
 Easy choice for small project spring boot is best choice.I did not have difficulty using it because I actively use it in my business life.
 
 ## Why Vue 
+
 I search about front-end techs after i read this article https://tekkiwebsolutions.com/blog/comparison-of-angular-vs-react-vs-vue. 
 I decided Vue because my project is samll and vue learning curve is better React and Angular. 
 Before I haven't coded vue , but always wondered. So this project my first vue project.
 Vue project folder name is task-vue-side. I added without node modules you need to npm install for modules.
 
+## Why Vuetify
+
+Vuetify most used material design framework in vue side and also documentation page is awesome for beginner like me that's why I chose it.
+
 ## Why MySql
+
 Here I chose my-sql relational database that I did not use before because I was wondering because it was used a lot and I wanted to use it.
 I added CreateTableScript.sql for create table.
 
@@ -121,8 +127,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 * Sorting in Table (Click Header) 
 * Searching in Table
 
-Improvement Points 
-
 <!-- TODO -->
 ## TODO
 * Form Input Validations 
@@ -134,7 +138,7 @@ Improvement Points
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/kivancbeser/spring-boot-crud-example-master/issues) for a list of proposed features (and known issues).
 
 
 
