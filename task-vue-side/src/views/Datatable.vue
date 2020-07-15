@@ -139,7 +139,7 @@ export default {
   methods: {
     fetchAccounts() {
       this.axios
-        .get("http://localhost:9191/accounts")
+        .get("http://localhost:9191/findall")
         .then(res => {
           console.log(res.data);
           this.accounts = res.data;
@@ -209,7 +209,7 @@ export default {
         console.log(this.editedItem);
 
         this.axios
-          .post("http://localhost:9191/addaccount", {
+          .post("http://localhost:9191/account", {
             id: this.editedItem.id,
             firstname: this.editedItem.firstname,
             lastname: this.editedItem.lastname,

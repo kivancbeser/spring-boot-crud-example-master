@@ -14,8 +14,8 @@ public class AccountController {
     @Autowired
     private AccountService service;
 
-    @PostMapping("/addaccount")
-    public Account addAccount(@RequestBody Account account) {
+    @PostMapping("/account")
+    public Account save(@RequestBody Account account) {
         return service.saveAccount(account);
     }
 
@@ -24,17 +24,17 @@ public class AccountController {
         return service.saveAccounts(accounts);
     }
 
-    @GetMapping("/accounts")
+    @GetMapping("/findall")
     public List<Account> findAllAccounts() {
         return service.getAccounts();
     }
 
-    @GetMapping("/accountById/{id}")
-    public Account findAccountById(@PathVariable int id) {
+    @GetMapping("/account/account-id/{id}")
+    public Account findById(@PathVariable int id) {
         return service.getAccountById(id);
     }
 
-    @GetMapping("/account/{firstname}")
+    @GetMapping("/account/account-first-name/{firstname}")
     public Account findByFirstname(@PathVariable String firstname) {
         return service.getAccountByName(firstname);
     }
