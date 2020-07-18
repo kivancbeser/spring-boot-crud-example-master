@@ -103,11 +103,18 @@ https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
 3. Execute Maven Clean & Install
 
+4. Start the Spring Boot Application
+
 ### Installation For Frontend
 
-1. npm
+1. npm install
 ```sh
 npm install
+```
+
+2. npm run serve
+```sh
+npm run serve
 ```
 
 ### Installation For Database
@@ -126,13 +133,17 @@ use javatask;
 CREATE TABLE `account_tbl` ( `id` int NOT NULL, `active` bit(1) DEFAULT NULL, `birthdate` datetime DEFAULT NULL, `email` varchar(255) DEFAULT NULL,`firstname` varchar(255) DEFAULT NULL,`lastname` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. After all installations start spring boot application, start vue project with "npm run serve" command and don't forget to start mysql server.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+2. Go to chrome or other browser and go to:(If you haven't changed the port)
+
+```sh
+http://localhost:8086/datatable
+```
+3. And DONE. You can easily use this application.
 
 <!-- Done -->
 ## Done
