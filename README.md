@@ -93,18 +93,37 @@ npm install npm@latest -g
 ```sh
 git clone https://github.com/kivancbeser/spring-boot-crud-example-master.git
 ```
-2. Install NPM packages
+### Installation For Backend
+
+1. Install JDK 1.8 version or more higher version.
+```sh
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+```
+2. Open the project in the IDE. (I Prefer Intellij Idea)
+
+3. Execute Maven Clean & Install
+
+### Installation For Frontend
+
+1. npm
 ```sh
 npm install
 ```
-3. Download and Install MySql
-4. After Installation Execute This Scripts For Create Database and Table
+
+### Installation For Database
+1. Download and Install MySql
+```sh
+Please check root and password for connecting java-side. If you choose different password, you have to change "application.properties" file.
+```
+2. Run Create Database Script
 ```sh
 create database javatask;
-use javatask;
 ```
+
+3. Run Create Table Script
 ```sh
-'account_tbl', 'CREATE TABLE `account_tbl` (\n  `id` int NOT NULL,\n  `active` bit(1) DEFAULT NULL,\n  `birthdate` datetime DEFAULT NULL,\n  `email` varchar(255) DEFAULT NULL,\n  `firstname` varchar(255) DEFAULT NULL,\n  `lastname` varchar(255) DEFAULT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci'
+use javatask;
+CREATE TABLE `account_tbl` ( `id` int NOT NULL, `active` bit(1) DEFAULT NULL, `birthdate` datetime DEFAULT NULL, `email` varchar(255) DEFAULT NULL,`firstname` varchar(255) DEFAULT NULL,`lastname` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
 
@@ -134,7 +153,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 * Using moment for beauthy showing date in table.(May be using moment library) 
 * Asyc await usage -Add colorful buttons and add confirmation dialogs. 
 * More comment for spring side.
-
+* Add Unit Test
 <!-- ROADMAP -->
 ## Roadmap
 
