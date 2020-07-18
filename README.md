@@ -87,6 +87,11 @@ This is an example of how to list things you need to use the software and how to
 npm install npm@latest -g
 ```
 
+* Install JDK 1.8 version or more higher version.
+```sh
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+```
+
 ### Installation
  
 1. Clone the repo
@@ -95,24 +100,25 @@ git clone https://github.com/kivancbeser/spring-boot-crud-example-master.git
 ```
 ### Installation For Backend
 
-1. Install JDK 1.8 version or more higher version.
-```sh
-https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
-```
-2. Open the project in the IDE. (I Prefer Intellij Idea)
+1. Open the project in the IDE. (I Prefer Intellij Idea)
 
-3. Execute Maven Clean & Install
+2. Execute Maven Clean & Install
 
-4. Start the Spring Boot Application
+3. Start the Spring Boot Application
 
 ### Installation For Frontend
 
-1. npm install
+1. Change directory and go to task-vue-side
+```sh
+cd task-vue-side
+```
+
+2. npm install
 ```sh
 npm install
 ```
 
-2. npm run serve
+3. npm run serve
 ```sh
 npm run serve
 ```
