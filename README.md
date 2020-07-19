@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Spring Boot Crud Example][project-screenshot]]
 
 It was created for the purpose of a web project from database to user.
 
@@ -213,4 +213,4 @@ Project Link: [https://github.com/kivancbeser/spring-boot-crud-example-master](h
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kivancenesbeser
-[product-screenshot]: screenshot.png
+[project-screenshot]: /screenshots/screenshot.png
