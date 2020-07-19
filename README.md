@@ -2,9 +2,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
+  <a href="https://github.com/kivancbeser/spring-boot-crud-example-master">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
+  <br />
+  <a href="https://github.com/kivancbeser/spring-boot-crud-example-master">
+      <img src="/screenshots/DemoApplication.gif" alt="Demo Gif" width="1400" height="700">
+   </a>
+  
 
   <h3 align="center">Spring Boot Crud Example</h3>
 
@@ -13,7 +18,7 @@
     <a href="https://github.com/kivancbeser/spring-boot-crud-example-master"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/kivancbeser/spring-boot-crud-example-master/blob/master/ProjectDemo.webm">View Demo</a>
+    <a href="https://github.com/kivancbeser/spring-boot-crud-example-master/blob/master/ProjectDemo.webm">View Demo Video</a>
     ·
     <a href="https://github.com//kivancbeser/spring-boot-crud-example-master/issues">Report Bug</a>
     ·
