@@ -5,14 +5,15 @@
   <a href="https://github.com/kivancbeser/spring-boot-crud-example-master">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
+  <h3 align="center">Spring Boot Crud Example</h3>
   <br />
+  <h2 align="center">Spring Boot Crud Example Demo Gif</h2>
   <a href="https://github.com/kivancbeser/spring-boot-crud-example-master">
       <img src="/screenshots/DemoApplication.gif" alt="Demo Gif" width="1400" height="700">
    </a>
   
 
-  <h3 align="center">Spring Boot Crud Example</h3>
-
+ 
   <p align="center">
     <br />
     <a href="https://github.com/kivancbeser/spring-boot-crud-example-master"><strong>Explore the docs »</strong></a>
