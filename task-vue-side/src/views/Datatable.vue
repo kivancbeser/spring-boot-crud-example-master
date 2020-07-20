@@ -8,6 +8,9 @@
       sort-by="id"
       class="elevation-1"
     >
+      <template v-slot:item.birthdate="{ item }">
+        {{ formatDate(item.birthdate) }}
+      </template>
       <template v-slot:top>
         <v-toolbar flat color="white">
           <v-toolbar-title>
@@ -43,10 +46,37 @@
                       <v-text-field v-model="editedItem.email"  :rules="[rules.required, rules.email]" label="Email"></v-text-field>
                     </v-col>
                     <v-col cols="12" sm="6" md="4">
-                      <v-text-field v-model="editedItem.birthdate" label="Birthdate"></v-text-field>
+                      <v-dialog
+                        ref="dialog"
+                        v-model="modal"
+                        :return-value.sync="editedItem.birthdate"
+                        persistent
+                        width="290px"
+                      >
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-text-field
+                            v-model="editedItem.birthdate"
+                            label="Birtdate"
+                            prepend-icon="event"
+                            readonly
+                            v-bind="attrs"
+                            v-on="on"
+                          ></v-text-field>
+                        </template>
+                        <v-date-picker v-model="editedItem.birthdate" scrollable>
+                          <v-spacer></v-spacer>
+                          <v-btn text color="primary" @click="modal = false">Cancel</v-btn>
+                          <v-btn text color="primary" @click="$refs.dialog.save(editedItem.birthdate)">OK</v-btn>
+                        </v-date-picker>
+                      </v-dialog>
                     </v-col>
+                       
+
                     <v-col cols="12" sm="6" md="4">
-                      <v-text-field v-model="editedItem.active" label="Active"></v-text-field>
+                      <v-switch
+                        v-model="editedItem.active"
+                        :label="`Active: ${editedItem.active.toString()}`"
+                      ></v-switch>
                     </v-col>
                   </v-row>
                 </v-container>
@@ -73,8 +103,14 @@
 </template>
 
 <script>
+import moment from "moment";
+
 export default {
   data: () => ({
+    date: new Date().toISOString().substr(0, 10),
+    menu: false,
+    modal: false,
+      menu2: false,
     name: '',
       nameRules: [
         v => !!v || 'Name is required',
@@ -98,7 +134,7 @@ export default {
       },
       { text: "Last Name", value: "lastname" },
       { text: "Email", value: "email" },
-      { text: "Birth Date", value: "birthdate" },
+      { text: "Birthdate", value: "birthdate" },
       { text: "Active", value: "active" },
       { text: "Actions", value: "actions" }
     ],
@@ -108,14 +144,14 @@ export default {
       firstname: "aaa",
       lastname: "bb",
       email: "abc@gmail.com",
-      birthdate: "2010-05-05",
+      birthdate: new Date().toISOString().substr(0, 10),
       active: true
     },
     defaultItem: {
       firstname: "aaaa",
       lastname: "bb",
       email: "abc@gmail.com",
-      birthdate: "2010-05-05",
+      birthdate: new Date().toISOString().substr(0, 10),
       active: true
     }
   }),
@@ -225,6 +261,9 @@ export default {
       }
 
       this.close();
+    },
+    formatDate(value) {
+      return moment(value).format("YYYY-MM-DD")
     }
   }
 };
