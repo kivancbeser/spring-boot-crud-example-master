@@ -1,0 +1,5 @@
+com\crud\example\controller\AccountController.class
+com\crud\example\SpringBootCrudExample2Application.class
+com\crud\example\repository\AccountRepository.class
+com\crud\example\entity\Account.class
+com\crud\example\service\AccountService.class
