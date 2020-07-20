@@ -163,15 +163,18 @@ http://localhost:8086/datatable
 * Showing in Table 
 * Sorting in Table (Click Header) 
 * Searching in Table
+* Adding Unit Test 20.07.2020
+* Using Moment for formatDate 21.07.2020
+* Birthday-> Datepicker , Active -> Input Switch 21.07.2020
 
 <!-- TODO -->
 ## TODO
 * Form Input Validations 
-* Form input birthday-> datepicker , active -> input-switch for user-friendly. 
-* Using moment for beauthy showing date in table.(May be using moment library) 
+* ~~Form input birthday-> datepicker , active -> input-switch for user-friendly~~
+* ~~Using moment for beauthy showing date in table.(May be using moment library)~~ 
 * Asyc await usage -Add colorful buttons and add confirmation dialogs. 
 * More comment for spring side.
-* Add Unit Test
+* Add More Unit Test
 <!-- ROADMAP -->
 ## Roadmap
 
