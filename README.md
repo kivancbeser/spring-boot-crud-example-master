@@ -2,18 +2,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
+  <a href="https://github.com/kivancbeser/spring-boot-crud-example-master">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
-
   <h3 align="center">Spring Boot Crud Example</h3>
-
+  <br />
+ 
   <p align="center">
     <br />
     <a href="https://github.com/kivancbeser/spring-boot-crud-example-master"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/kivancbeser/spring-boot-crud-example-master/blob/master/ProjectDemo.webm">View Demo</a>
+    <a href="https://github.com/kivancbeser/spring-boot-crud-example-master/blob/master/ProjectDemo.webm">View Demo Video</a>
     ·
     <a href="https://github.com//kivancbeser/spring-boot-crud-example-master/issues">Report Bug</a>
     ·
@@ -41,10 +41,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+ <a href="https://github.com/kivancbeser/spring-boot-crud-example-master">
+      <img src="/screenshots/DemoApplication.gif" alt="Demo Gif" width="1400" height="700">
+ </a>
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-It was created for the purpose of a web project from database to user.
+It was created for the purpose of a web project from database to user. You can see the done features in [Done](#done) sections. 
 
 
 ### Built With
@@ -207,4 +208,4 @@ Project Link: [https://github.com/kivancbeser/spring-boot-crud-example-master](h
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kivancenesbeser
-[product-screenshot]: screenshot.png
+[project-screenshot]: /screenshots/screenshot.png
