@@ -13,7 +13,7 @@
     <a href="https://github.com/kivancbeser/spring-boot-crud-example-master"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/kivancbeser/spring-boot-crud-example-master/blob/master/ProjectDemo.webm">View Demo Video</a>
+    <a href="https://github.com/kivancbeser/spring-boot-crud-example-master/blob/master/ProjectDemo.mp4">View Demo Video</a>
     ·
     <a href="https://github.com//kivancbeser/spring-boot-crud-example-master/issues">Report Bug</a>
     ·
