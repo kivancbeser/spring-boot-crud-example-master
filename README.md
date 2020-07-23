@@ -182,9 +182,9 @@ The app defines following CRUD APIs.
 {
   "firstname": "newaccountfirstname",
   "lastname": "newaccountllastname",
-	"email": "test@gmail.com",
-	"birthdate": "2010-05-05T00:00:00.000+0000",
-	"active": true
+  "email": "test@gmail.com",
+  "birthdate": "2010-05-05T00:00:00.000+0000",
+  "active": true
 }
 ```
 
@@ -193,9 +193,9 @@ The app defines following CRUD APIs.
 {
   "firstname": "updatedfirstname",
   "lastname": "updatedlastname",
-	"email": "updated@gmail.com",
-	"birthdate": "2010-05-05T00:00:00.000+0000",
-	"active": true
+  "email": "updated@gmail.com",
+  "birthdate": "2010-05-05T00:00:00.000+0000",
+  "active": true
 }
 ```
 You can test them using postman.
