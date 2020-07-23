@@ -175,6 +175,8 @@ http://localhost:8086/datatable
 * Asyc await usage -Add colorful buttons and add confirmation dialogs. 
 * More comment for spring side.
 * Add More Unit Test
+* Swagger
+* Sonarqube
 <!-- ROADMAP -->
 ## Roadmap
 
