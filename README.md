@@ -135,10 +135,18 @@ create database javatask;
 ```
 
 3. Run Create Table Script
+run `src/main/resources/createaccounttablescript.sql`
+
+              OR 
+
 ```sh
 use javatask;
 CREATE TABLE `account_tbl` ( `id` int NOT NULL, `active` bit(1) DEFAULT NULL, `birthdate` datetime DEFAULT NULL, `email` varchar(255) DEFAULT NULL,`firstname` varchar(255) DEFAULT NULL,`lastname` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
+4. Change mysql username and password as per your installation
+
++ open `src/main/resources/application.properties`
++ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
 
 <!-- USAGE EXAMPLES -->
 ## Usage
