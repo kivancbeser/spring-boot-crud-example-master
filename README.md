@@ -33,6 +33,7 @@
   * [Installation](#installation)
 * [Usage](#usage)
 * [Explore Rest APIs](#explorerestapis)
+  * [Account](#account)
 * [Done](#done)
 * [TODO](#todo)
 * [Roadmap](#roadmap)
@@ -163,6 +164,8 @@ http://localhost:8086/datatable
 
 <!-- Explore Rest APIs -->
 ## Explore Rest APIs
+
+The app defines following CRUD APIs.
 
 ### Account
 
