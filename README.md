@@ -1,4 +1,5 @@
-[![LinkedIn][linkedin-shield]][linkedin-url] [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?)
+[![LinkedIn][linkedin-shield]][linkedin-url] [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=kivancbeser_spring-boot-crud-example-master)
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
