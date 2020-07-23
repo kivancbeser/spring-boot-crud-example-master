@@ -8,44 +8,35 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:8086")
+@RequestMapping("/api/account")
 @RestController
 public class AccountController {
 
     @Autowired
-    private AccountService service;
+    private AccountService accountService;
 
-    @PostMapping("/account")
-    public Account save(@RequestBody Account account) {
-        return service.saveAccount(account);
+    @PostMapping
+    public Account saveAccount(@RequestBody Account account) {
+        return accountService.saveAccount(account);
     }
 
-    @PostMapping("/addaccounts")
-    public List<Account> addAccounts(@RequestBody List<Account> accounts) {
-        return service.saveAccounts(accounts);
+    @GetMapping
+    public List<Account> getAccounts() {
+        return accountService.getAccounts();
     }
 
-    @GetMapping("/findall")
-    public List<Account> findAllAccounts() {
-        return service.getAccounts();
+    @GetMapping("/{id}")
+    public Account getAccount(@PathVariable int id) {
+        return accountService.getAccountById(id);
     }
 
-    @GetMapping("/account/account-id/{id}")
-    public Account findById(@PathVariable int id) {
-        return service.getAccountById(id);
+    @PutMapping("/{id}")
+    public Account updateAccount(@RequestBody Account Account, @PathVariable int id) {
+        return accountService.updateAccount(Account);
     }
 
-    @GetMapping("/account/account-first-name/{firstname}")
-    public Account findByFirstname(@PathVariable String firstname) {
-        return service.getAccountByName(firstname);
-    }
-
-    @PutMapping("/update")
-    public Account updateAccount(@RequestBody Account Account) {
-        return service.updateAccount(Account);
-    }
-
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public void deleteAccount(@PathVariable int id) {
-        service.deleteAccount(id);
+        accountService.deleteAccount(id);
     }
 }

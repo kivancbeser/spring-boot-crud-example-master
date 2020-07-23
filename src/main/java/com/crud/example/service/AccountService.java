@@ -43,13 +43,6 @@ public class AccountService {
         return repository.findById(id).orElse(null);
     }
 
-    /**  This method find Account By Name
-     * @param name
-     * @return Account
-     */
-    public Account getAccountByName(String name) {
-        return repository.findByFirstname(name);
-    }
 
     /** This method delete Account By Id
      * @param id

@@ -175,7 +175,7 @@ export default {
   methods: {
     fetchAccounts() {
       this.axios
-        .get("http://localhost:9191/findall")
+        .get("http://localhost:9191/api/account")
         .then(res => {
           console.log(res.data);
           this.accounts = res.data;
@@ -200,7 +200,7 @@ export default {
         this.accounts.splice(index, 1)
       ) {
         this.axios
-          .delete("http://localhost:9191/delete/" + item.id)
+          .delete("http://localhost:9191/api/account/"+ item.id)
           .then(res => {
             console.log(res.data);
             if (res.data) {
@@ -226,7 +226,7 @@ export default {
         console.log(this.editedItem);
 
         this.axios
-          .put("http://localhost:9191/update", {
+          .put("http://localhost:9191/api/account/"+this.editedItem.id, {
             id: this.editedItem.id,
             firstname: this.editedItem.firstname,
             lastname: this.editedItem.lastname,
@@ -245,7 +245,7 @@ export default {
         console.log(this.editedItem);
 
         this.axios
-          .post("http://localhost:9191/account", {
+          .post("http://localhost:9191/api/account", {
             id: this.editedItem.id,
             firstname: this.editedItem.firstname,
             lastname: this.editedItem.lastname,
