@@ -1,4 +1,4 @@
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?)
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
