@@ -32,6 +32,7 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
+* [Explore Rest APIs](#explorerestapis)
 * [Done](#done)
 * [TODO](#todo)
 * [Roadmap](#roadmap)
@@ -159,6 +160,44 @@ CREATE TABLE `account_tbl` ( `id` int NOT NULL, `active` bit(1) DEFAULT NULL, `b
 http://localhost:8086/datatable
 ```
 3. And DONE. You can easily use this application.
+
+<!-- Explore Rest APIs -->
+## Explore Rest APIs
+
+### Account
+
+| Method | Url | Description | Sample Valid Request Body |
+| ------ | --- | ----------- | ------------------------- |
+| GET    | /api/accounts | Get all accounts | |
+| GET    | /api/accounts/{id} | Get account by id | |
+| POST   | /api/accounts | Create new account  | [JSON](#accountcreate) |
+| PUT    | /api/accounts/{id} | Update account | [JSON](#accountupdate) |
+| DELETE | /api/accounts/{id} | Delete account | |
+
+##### <a id="accountcreate">Create Account -> /api/accounts</a>
+```json
+{
+  "firstname": "newaccountfirstname",
+  "lastname": "newaccountllastname",
+	"email": "test@gmail.com",
+	"birthdate": "2010-05-05T00:00:00.000+0000",
+	"active": true
+}
+```
+
+##### <a id="accountupdate">Update Account -> /api/accounts{id}</a>
+```json
+{
+  "firstname": "updatedfirstname",
+  "lastname": "updatedlastname",
+	"email": "updated@gmail.com",
+	"birthdate": "2010-05-05T00:00:00.000+0000",
+	"active": true
+}
+```
+You can test them using postman.
+
+
 
 <!-- Done -->
 ## Done
