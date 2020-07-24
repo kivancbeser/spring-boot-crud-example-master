@@ -217,7 +217,7 @@ You can test them using postman.
 * Adding Unit Test 20.07.2020
 * Using Moment for formatDate 21.07.2020
 * Birthday-> Datepicker , Active -> Input Switch 21.07.2020
-
+* Sonar Scan
 <!-- TODO -->
 ## TODO
 * Form Input Validations 
@@ -227,7 +227,7 @@ You can test them using postman.
 * More comment for spring side.
 * Add More Unit Test
 * Swagger
-* Sonarqube
+* ~~Sonar~~ 
 <!-- ROADMAP -->
 ## Roadmap
 
