@@ -45,7 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
  <a href="https://github.com/kivancbeser/spring-boot-crud-example-master">
-      <img src="/screenshots/DemoApplication.gif" alt="Demo Gif" width="1600" height="800">
+      <img src="/screenshots/DemoApplication.gif" alt="Demo Gif" width="1600">
  </a>
 
 It was created for the purpose of a web project from database to user. You can see the done features in [Done](#done) sections. 
